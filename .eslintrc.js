@@ -9,6 +9,9 @@ module.exports = {
   parser: 'babel-eslint',
   rules: {
     // Defaults
+    'react/static-property-placement': 0,
+    'react/jsx-props-no-spreading': 0,
+    'react/state-in-constructor': 0,
     'react/jsx-filename-extension': [0],
     'react/forbid-prop-types': [1, {forbid: ['array', 'object']}],
     'react/jsx-indent': [1, 2],
