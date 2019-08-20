@@ -3,19 +3,25 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "start": "react-native start",
+    "start": "node node_modules/react-native/local-cli/cli.js react-native start",
     "test": "jest",
     "lint": "eslint .",
     "clear": "watchman watch-del-all && rm -rf node_modules/ && yarn cache clean && yarn install && yarn start -- --reset-cache",
     "clear-pods": "pod cache clean --all;rm -rf ~/Library/Caches/CocoaPods; rm -rf Pods; rm -rf ~/Library/Developer/Xcode/DerivedData/*; pod deintegrate; pod setup; pod install;"
   },
   "dependencies": {
+    "@shoutem/ui": "^1.0.1",
     "prop-types": "^15.7.2",
     "react": "16.8.6",
-    "react-native": "0.60.5",
+    "react-native": "^0.60.5",
+    "react-native-gesture-handler": "^1.3.0",
     "react-native-navigation": "^3.0.0",
+    "react-native-reanimated": "^1.2.0",
+    "react-navigation": "^3.11.1",
     "react-redux": "^7.1.0",
     "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "remote-redux-devtools": "^0.5.16",
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
